@@ -19,3 +19,4 @@ class Model(models.Model):
 class Rating(models.Model):
     model = models.ForeignKey(Model, on_delete=models.CASCADE)
     rating = models.IntegerField()
+    ip_address = models.CharField(max_length=45)  # برای ذخیره آی‌پی آدرس

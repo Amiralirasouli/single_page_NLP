@@ -9,8 +9,7 @@ class CategorySerializer(serializers.ModelSerializer):
 class ModelSerializer(serializers.ModelSerializer):
     class Meta:
         model = Model
-        fields = '__all__'
-
+        fields = ['id', 'name', 'category', 'api_endpoint']
 class RatingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Rating

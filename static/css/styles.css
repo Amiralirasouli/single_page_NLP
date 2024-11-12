@@ -76,3 +76,18 @@ button:disabled {
 .stars .star.hovered {
     color: #FFD700; /* رنگ طلایی برای ستاره‌های انتخاب شده */
 }
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.result pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.error {
+    color: red;
+}

@@ -15,6 +15,7 @@ class ModelAdmin(admin.ModelAdmin):
 
 @admin.register(Rating)
 class RatingAdmin(admin.ModelAdmin):
-    list_display = ('id', 'model', 'rating')
+    list_display = ('id', 'model', 'rating','ip_address')
     search_fields = ('model__name',)
     list_filter = ('rating',)
+
